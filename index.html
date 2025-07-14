@@ -1,182 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAT Cargo VAD LLC</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-        }
-        nav {
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding: 80px 20px;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-            animation: fadeIn 2s ease-in-out;
-        }
-        .hero-text {
-            max-width: 500px;
-            padding: 20px;
-            animation: slideInLeft 1.5s ease;
-        }
-        .hero-text h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .hero-text p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .hero-img img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 10px;
-            animation: slideInRight 1.5s ease;
-        }
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s ease;
-        }
-        .section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        .contact {
-            background: #e9e9e9;
-            padding: 60px 20px;
-        }
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInLeft {
-            from { transform: translateX(-50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-        @keyframes slideInRight {
-            from { transform: translateX(50px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>del marq OU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #1c1c1c;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 60px 20px;
+      background: white;
+      border-bottom: 10px solid #f0f0f0;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 15px;
+    }
+    section p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .image-box {
+      margin-top: 25px;
+    }
+    .image-box img {
+      max-width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">PAT Cargo VAD LLC</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+  <h1>del marq OU</h1>
+  <p>Smart Retail Services from Estonia</p>
+</header>
 
-    <div class="hero" id="home">
-        <div class="hero-text">
-            <h1>PAT Cargo VAD LLC</h1>
-            <p>Your trusted partner in transportation and warehousing. We provide reliable cargo services and storage solutions to meet your business needs with efficiency and care.</p>
-        </div>
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=934&q=80" alt="Cargo Services">
-        </div>
-    </div>
+<section>
+  <h2>About Us</h2>
+  <p>del marq OU is a modern Estonian retail company delivering high-quality, niche products across various categories. Based in Tartu, we specialize in fast, flexible, and customer-centric service.</p>
+  <div class="image-box">
+    <img src="https://pulse.lk/wp-content/uploads/2019/05/download.jpg" alt="About del marq">
+  </div>
+</section>
 
-    <div class="section" id="about">
-        <h2>About Us</h2>
-        <p>PAT Cargo VAD LLC is a Domestic LLC based in Arizona, offering specialized services in transportation and warehousing. With a focus on reliability and customer satisfaction, we have been serving businesses since 2021.</p>
-        <p><strong>Registered Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<section>
+  <h2>Personal Shopping Experience</h2>
+  <p>We leverage digital tools to make every shopping experience personal and seamless. Whether online or in-store, our clients enjoy the convenience of curated selections and smart tools.</p>
+  <div class="image-box">
+    <img src="https://g.foolcdn.com/editorial/images/561833/shopping-personal-tablet.jpg" alt="Personal Shopping">
+  </div>
+</section>
 
-    <div class="section contact" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:contact@patcargovadllc.click">contact@patcargovadllc.click</a></p>
-        <p><strong>Agent Address:</strong><br>
-        2902 W Sweetwater Ave, Apt 2190, Phoenix, AZ 85029, United States</p>
-    </div>
+<section>
+  <h2>Innovation in Retail</h2>
+  <p>Innovation drives us. From interactive platforms to fast delivery systems, our approach transforms how people shop and connect with products they love.</p>
+  <div class="image-box">
+    <img src="https://newsgomel.by/upload/resize_cache/webp/iblock/b3c/v0872wqot4rbeypdpa28nv5wnkm2si00.webp" alt="Innovation">
+  </div>
+</section>
 
-    <footer>
-        &copy; 2025 PAT Cargo VAD LLC. All rights reserved.
-    </footer>
+<section>
+  <h2>Our Market</h2>
+  <p>We serve a wide customer base across Estonia and beyond. Our catalog spans sporting goods, hobby materials, accessories, and more — always tailored to modern tastes.</p>
+  <div class="image-box">
+    <img src="https://inbusiness.kz/uploads/37/images/3oS29FXO.jpg" alt="Product Range">
+  </div>
+</section>
 
-    <script>
-        // Intersection Observer for fade-in effect
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
+<section>
+  <h2>Get in Touch</h2>
+  <p>
+    <strong>Email:</strong> contact@delmarqou.shop<br>
+    <strong>Phone:</strong> +37258521481<br>
+    <strong>Address:</strong> Narva mnt 121-1 Tartu, 51008 Estonia
+  </p>
+  <div class="image-box">
+    <img src="https://www.theindustry.fashion/wp-content/uploads/2021/07/Sports-Direct-3-1.jpg" alt="Store Image">
+  </div>
+</section>
 
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
+<footer>
+  &copy; 2025 del marq OU. All rights reserved.
+</footer>
 
 </body>
 </html>
